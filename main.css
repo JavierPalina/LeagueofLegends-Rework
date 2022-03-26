@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+
+* {
+    font-family: 'Friz Quadrata Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Friz Quadrata Std Bold'), url('fuente/friz-quadrata-std-bold-587034a220f9f.woff') format('woff');
+    user-select: none;
+}
+
+html {
+    background-color: rgb(3, 6, 8);
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(3, 6, 8);
+    display: flex;
+}
+
+.container-nav {
+    display: flex;
+    width: 900px;
+    height: 50px;
+    position: absolute;
+    z-index: 800;
+    top: 35px;
+    left: 174px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 38px;
+}
+
+.containerp {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerp a {
+    color: #c1c0ae;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.containerp a:first-child {
+    color: white;
+    -webkit-box-shadow: -2px 30px 15px -5px #666762; 
+    box-shadow: -2px 30px 15px -5px #666762;
+}
+
+.containerp a:hover {
+    color: white;
+    -webkit-box-shadow: -2px 30px 15px -5px #666762; 
+    box-shadow: -2px 30px 15px -5px #666762;
+}
+
+.shadow {
+    width: 410px;
+    height: 500px;
+    position: absolute;
+    left: 132px;
+    z-index: 300;
+    top: 30px;
+    box-shadow: inset 0px 37px 34px 0;
+}
+
+.shadow2 {
+    width: 420px;
+    height: 520px;
+    position: absolute;
+    left: 132px;
+    z-index: 300;
+    top: 30px;
+    box-shadow: inset -3px -56px 97px 0;
+}
+
+.ekko {
+    width: 400;
+    height: 520px;
+    position: absolute;
+    z-index: 100;
+    left: 132px;
+    box-shadow: inset 0px 37px 34px 0;
+    top: 30px;
+}
+
+.ekko img {
+    width: 400;
+    height: 100%;
+}
+
+.containerriot {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 300px;
+    margin-left: 25px;
+}
+
+.containerriot .h12 {
+    width: 25px;
+    height: 25px;
+}
+
+.containerriot path {
+    fill: white;
+}
+
+.containerarcane {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 345px;
+    margin-left: 35px;
+}
+
+.containerarcane img {
+    width: 35px;
+    height: 35px;
+    margin: -3px;
+}
+
+.borderekko {
+    background-color: white;
+    width: 113px;
+    height: 44px;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    position: absolute;
+    top: 400px;
+    margin-left: 32px;
+    z-index: 100;
+}
+
+.containerimg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+section .mapa {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.shadow3 {
+    width: 972px;
+    height: 26px;
+    position: absolute;
+    left: 132px;
+    z-index: 400;
+    top: 30px;
+    box-shadow: -13px 21px 16px -5px rgba(0,0,0,0.96) inset;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 233px);
+    grid-template-rows: 1fr;
+    grid-row-gap: 1rem;
+    overflow: hidden;
+    height: 560px;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    position: relative;
+    width: 650px;
+    margin: 0;
+    left: 485px;
+    z-index: 300;
+    transform: skewX(13deg);
+    clip-path: polygon(0 0, 99% 0%, 82% 99%, 29% 99%, -35% 950%);
+    top: 30px;
+}
+
+li {
+    scroll-snap-align: center;
+    display: inline-block;
+    font-size: 0;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    margin-left: -43px;
+    background-color: transparent !important;
+    border: 3px solid transparent;
+    position: relative;
+}
+
+li:hover > .abajo {
+    transition-duration: 1s;
+    margin-top: 30px;
+}
+
+li:hover > .abajo img {
+    transform: skewX(-10deg) scale(1.2);
+    transition-duration: 1s;
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+.arriba {
+    height: 260px;
+    width: 100%;
+    border-left: 1px solid #aaa27d;
+    border-right: 1px solid #aaa27d;
+    box-shadow: inset 0px 37px 34px 0;
+}
+
+.abajo {
+    height: 260px;
+    width: 88%;
+}
+
+.uno img {
+    width: 105%;
+    height: 100%;
+    transform: skewX(-10deg) scale(1.2);
+    z-index: -1;
+    object-fit: cover;
+    position: relative;
+    left: -8px;
+    top: 30px;
+    pointer-events: none;
+}
+
+.dos img {
+    transform: skewX(-13deg);
+    width: 333px;
+    z-index: -2;
+    position: relative;
+    left: -39px;
+    top: -23px;
+    pointer-events: none;
+}
+
+.tres img {
+    transform: skewX(-13deg);
+    width: 313px;
+    position: relative;
+    left: -41px;
+    top: -10px;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.cuatro img {
+    transform: skewX(-14deg);
+    width: 301px;
+    position: relative;
+    left: -22px;
+    top: -16px;
+    z-index: -2;
+    pointer-events: none;    
+}
+
+.cinco img {
+    transform: skewX(-14deg);
+    width: 330px;
+    position: relative;
+    left: -45px;
+    top: -13px;
+    z-index: -2;
+    pointer-events: none;
+}
+
+.seis img {
+    transform: skewX(-12deg);
+    width: 269px;
+    height: 111%;
+    position: relative;
+    left: -31px;
+    top: 3px;
+    z-index: -2;
+    pointer-events: none;
+}
+
+
+.png {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -145px;
+    left: 20px;
+    pointer-events: none;
+}
+
+.png2 {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -144px;
+    left: 30px;
+    pointer-events: none;
+}
+
+.png3 {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -150px;
+    left: 15px;
+    pointer-events: none;
+}
+
+.png4 {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -147px;
+    left: 19px;
+    pointer-events: none;
+}
+
+.png5 {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -142px;
+    left: 10px;
+    pointer-events: none;
+}
+
+.png6 {
+    width: 200px;
+    transform: skewX(-10deg);
+    position: relative;
+    top: -157px;
+    left: 18px;
+    pointer-events: none;
+}
+
+.abajo .textjinx {
+    color: white;
+    position: relative;
+    top: -113px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: -144px;
+    font-weight: 600;
+}
+
+.abajo .textakali {
+    color: white;
+    position: relative;
+    top: -145px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: 55px;
+    font-weight: 600
+}
+
+.abajo .textthresh {
+    color: white;
+    position: relative;
+    top: -145px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: 53px;
+    font-weight: 600
+}
+
+.abajo .textlux {
+    color: white;
+    position: relative;
+    top: -115px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: -144px;
+    font-weight: 600;
+}
+
+.abajo .textyasuo {
+    color: white;
+    position: relative;
+    top: -142px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: 53px;
+    font-weight: 600;
+}
+
+.abajo .textleona {
+    color: white;
+    position: relative;
+    top: -142px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 16px;
+    transform: skewX(-10deg);
+    left: 52px;
+    font-weight: 600;
+}
+
+.abajo .pjinx {
+    color: white;
+    position: relative;
+    top: -140px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: 53px;
+}
+
+.abajo .pakali {
+    color: white;
+    position: relative;
+    top: -133px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: 2px;
+}
+
+.abajo .pthresh {
+    color: white;
+    position: relative;
+    top: -131px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: -13px;
+}
+
+.abajo .plux {
+    color: white;
+    position: relative;
+    top: -139px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: 53px;
+    width: 100px;
+}
+
+.abajo .pyasuo {
+    color: white;
+    position: relative;
+    top: -129px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: -2px;
+    width: 100px;
+}
+
+.abajo .pleona {
+    color: white;
+    position: relative;
+    top: -127px;
+    z-index: 999999999;
+    display: inline-block;
+    font-size: 11px;
+    transform: skewX(-10deg);
+    left: -6px;
+    width: 100px;
+}
+
+.border {
+    background-color: white;
+    width: 113px;
+    height: 44px;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    position: relative;
+    top: -130px;
+    margin-left: 42px;
+    z-index: 100;
+    transform: skewX(-12deg);
+}
+
+.border2 {
+    background-color: white;
+    width: 113px;
+    height: 44px;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    position: relative;
+    top: -129px;
+    margin-left: 42px;
+    z-index: 100;
+    transform: skewX(-12deg);
+}
+
+.border3 {
+    background-color: white;
+    width: 113px;
+    height: 44px;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    position: relative;
+    top: -130px;
+    margin-left: 42px;
+    z-index: 100;
+    transform: skewX(-12deg);
+}
+
+.border4 {
+    background-color: white;
+    width: 113px;
+    height: 44px;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    position: relative;
+    top: -78px;
+    margin-left: 42px;
+    z-index: 100;
+    transform: skewX(-12deg);
+}
+
+.ekko button {
+    width: 112px;
+    height: 43px;
+    left: 160px;
+    top: 107px;
+    border: 1px solid #ffedcd;
+    background-color: #e1a12c;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+    z-index: 700;
+}
+
+.jinx button {
+    width: 112px;
+    height: 43px;
+    position: relative;
+    border: 1px solid white;
+    background-color: #0283c9;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.akali button {
+    width: 112px;
+    height: 43px;
+    left: 276px;
+    top: 390px;
+    border: 1px solid white;
+    background-color: #347156;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.thresh button {
+    width: 112px;
+    height: 43px;
+    left: 506px;
+    top: 390px;
+    border: 1px solid white;
+    background-color: #59e0be;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.lux button {
+    width: 112px;
+    height: 43px;
+    left: 733px;
+    top: 390px;
+    border: 1px solid white;
+    background-color: #fed5a8;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.yasuo button {
+    width: 112px;
+    height: 43px;
+    left: 964px;
+    top: 390px;
+    border: 1px solid white;
+    background-color: #1d283f;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.leona button {
+    width: 112px;
+    height: 43px;
+    left: 964px;
+    top: 390px;
+    border: 1px solid white;
+    background-color: #a31a59;
+    font-size: 16px;
+    color: white;
+    clip-path: polygon(100% 80%, 100% 70%, 100% 51%, 97% 46%, 100% 43%, 100% 0, 79% 0%, 45% 0%, 25% 3%, 17% 0%, 0 0, 0 14%, 0 89%, 4% 89%, 0 95%, 0 100%, 55% 100%, 100% 100%, 100% 93%, 85% 84%, 73% 89%, 85% 80%);
+}
+
+.jinx button:hover {
+    background-color: #0172AF;
+}
+
+.akali button:hover {
+    background-color: #2B5C47;
+}
+
+.thresh button:hover {
+    background-color: #4EC0A3;
+}
+
+.lux button:hover {
+    background-color: #E4BF97;
+}
+
+.yasuo button:hover {
+    background-color: #161E2F;
+}
+
+.leona button:hover {
+    background-color: #8A174C;
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 11%;
+        margin-left: -6%
+    }
+
+    .gallery {
+        width: 515px;
+        clip-path: polygon();
+    }
+
+    .shadow3 {
+        left: 131px;
+        width: 838px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 9%;
+        margin-left: -6%
+    }
+
+    .shadow3 {
+        left: 131px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 6%;
+        margin-left: 4%
+    }
+
+    .shadow3 {
+        left: 131px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 6%;
+        margin-left: 10%
+    }
+
+    .shadow3 {
+        left: 131px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 6%;
+        margin-left: 15%
+    }
+
+    .shadow3 {
+        left: 131px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container-nav,
+    .shadow,
+    .shadow2,
+    .shadow3,
+    .ekko,
+    .gallery {
+        margin-top: 6%;
+        margin-left: 20%
+    }
+
+    .shadow3 {
+        left: 131px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+}
